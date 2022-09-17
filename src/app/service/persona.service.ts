@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { persona } from '../model/persona.model';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class PersonaService {
-  URL = 'https://apbasededatos.herokuapp.com/personas/';
+  URL = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 

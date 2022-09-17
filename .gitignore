@@ -4,6 +4,9 @@
 /dist
 /tmp
 /out-tsc
+/Front.End
+/Front.End.angular
+/apfront
 # Only exists if Bazel was run
 /bazel-out
 

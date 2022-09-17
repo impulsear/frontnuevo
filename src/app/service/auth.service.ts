@@ -4,12 +4,14 @@ import { Observable } from 'rxjs';
 import { JwtDto } from '../model/jwt-dto';
 import { LoginUsuario } from '../model/login-usuario';
 import { NuevoUsuario } from '../model/nuevo-usuario';
+import { environment } from 'src/environments/environment.prod';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://apbasededatos.herokuapp.com/';
+  authURL = environment.authUrl;
 
   constructor(private httpClient: HttpClient) { }
 

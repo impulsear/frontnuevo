@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  authUrl: 'https://apbasededatos.herokuapp.com/auth/',
+  apiUrl: 'https://apbasededatos.herokuapp.com/'
 };
